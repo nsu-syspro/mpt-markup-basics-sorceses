@@ -1,7 +1,9 @@
 \documentclass{article}
-\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\setmainfont{DejaVu Serif}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[russian]{babel}
 
 \begin{document}
 
@@ -9,18 +11,23 @@
 
 \textbf{Задача:} решить уравнение \(2x^2 + 5x - 12 = 0\)
 
-\textbf{Решение.} Это квадратное уравнение вида \(ax^2 + bx + c = 0\).
+\textbf{Решение.} Это квадратное уравнение, общий вид которого:
 
-Коэффициенты: \(a = 2\), \(b = 5\), \(c = -12\).
+\[ax^2 + bx + c = 0\]
 
-Дискриминант: 
-\[D = b^2 - 4ac = 5^2 - 4 \cdot 2 \cdot (-12) = 25 + 96 = 121\]
+В данном случае \(a = 2\), \(b = 5\), \(c = -12\).
 
-Корни:
-\[x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = \frac{-5 \pm 11}{4}\]
+Сначала необходимо вычислить дискриминант уравнения:
 
-\[x_1 = \frac{-16}{4} = -4,\quad x_2 = \frac{6}{4} = \frac{3}{2}\]
+\[D = b^2 - 4ac = (5)^2 - 4 \cdot 2 \cdot (-12) = 25 + 96 = 121\]
 
-\textbf{Ответ:} \(x_1 = -4\), \(x_2 = \frac{3}{2}\)
+Так как дискриминант является положительным (\(D > 0\)), это уравнение имеет два корня, вычисляемые по формуле:
+
+\[x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = \frac{-5 \pm \sqrt{121}}{4} = \frac{-5 \pm 11}{4}\]
+
+Таким образом, \(x_1 = \frac{-5 - 11}{4} = \frac{-16}{4} = -4\), \(x_2 = \frac{-5 + 11}{4} = \frac{6}{4} = \frac{3}{2}\).
+
+\textbf{Ответы:}  
+\(x_1 = -4\), \(x_2 = \frac{3}{2}\).
 
 \end{document}
