@@ -1,11 +1,10 @@
-set terminal pdf size 12,8 enhanced font 'Helvetica,12'
-set output 'solution/task4.pdf'
-set title "Курс доллара США к рублю (2013-2023)"
-set xlabel "Дата"
-set ylabel "Курс (руб)"
+set terminal png size 1200,800
+set output 'solution/task4.png'
+set title "USD/RUB Exchange Rate (2013-2023)"
+set xlabel "Date"
+set ylabel "Exchange Rate (RUB)"
 set xdata time
 set timefmt "%Y-%m-%d"
 set format x "%Y-%m"
-set xtics rotate by -45
 set grid
-plot 'data/task4-data.txt' using 1:2 with lines linewidth 2 title 'USD/RUB'
+plot 'data/task4-data.txt' using 1:2 with lines title 'USD/RUB'
